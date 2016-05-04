@@ -1,0 +1,25 @@
+{
+  "name": "coffeeshop-angular",
+  "version": "1.0.0",
+  "description": "coffeeshop-angular web app for accessin remote node/express api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joecih/coffeeshop-angular.git"
+  },
+  "author": "joecih",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joecih/coffeeshop-angular/issues"
+  },
+  "homepage": "https://github.com/joecih/coffeeshop-angular#readme",
+  "dependencies": {
+    "finalhandler": "^0.4.1",
+    "http": "0.0.0",
+    "serve-static": "^1.10.2"
+  }
+}
