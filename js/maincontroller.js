@@ -25,5 +25,11 @@ coffeeApp.config(['$routeProvider', function($routeProvider) {
     when('/', {
         templateUrl: "views/main.html",
         controller: 'MainController'
+    }).when('/register', {
+        templateUrl: "views/register.html",
+        controller: 'MainController'
+    }).when('/options', {
+        templateUrl: "views/options.html",
+        controller: 'MainController'
     })
 }]);
