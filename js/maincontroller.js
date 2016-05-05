@@ -183,6 +183,9 @@ coffeeApp.config(['$routeProvider', function($routeProvider) {
     }).when('/delivery', {
         templateUrl: "views/delivery.html",
         controller: "MainController"
+    }).when('/payment', {
+        templateUrl: "views/payment.html",
+        controller: "MainController"
     }).otherwise('/', {
         templateUrl: "views/main.html",
         controller: "MainController"
