@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/joecih/coffeeshop-angular#readme",
   "dependencies": {
+    "angular-animate": "^1.5.5",
+    "angular-touch": "^1.5.5",
+    "angular-ui-bootstrap": "^1.3.2",
     "finalhandler": "^0.4.1",
     "http": "0.0.0",
     "serve-static": "^1.10.2"

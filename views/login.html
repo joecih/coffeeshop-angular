@@ -1,0 +1,25 @@
+<div class="container-fluid main-content gradient1">
+  <div class="row-fluid">
+    <div class="col-sm-12 text-center">
+      <h1>Login</h1>
+      <h4>Please enter your login credentials</h4>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="col-sm-12 login-wrapper text-center">
+      <form role="form" ng-submit="loginForm()" id="login-form" name="login">
+        <div class="form-group">
+          <label>Username:</label>
+          <input type="text" ng-model="username" placeholder="Joe" minLength="5" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Password:</label>
+          <input type="password" ng-model="password" placeholder="6 character minimum" minLength="6" class="form-control"/>
+        </div>
+        <div class="button-holder">
+          <button type="submit" class="btn btn-success">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

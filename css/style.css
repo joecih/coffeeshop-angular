@@ -46,7 +46,7 @@ a:hover {
 }
 /* line 22, ../_tools/compass/sass/_nav.scss */
 .navbar-nav > li > a span {
-  font-size: 24px;
+  font-size: 28px;
   padding-right: 10px;
 }
 
@@ -58,7 +58,7 @@ a:hover {
 /* line 2, ../_tools/compass/sass/_home.scss */
 .main-content {
   position: absolute;
-  top: 80px;
+  top: 82px;
   bottom: 0;
   left: 0;
   right: -17px;
@@ -286,6 +286,121 @@ a:hover {
 #step-one {
   position: absolute;
   left: 2%;
+}
+
+/* line 1, ../_tools/compass/sass/_pricing.scss */
+#plans {
+  font-family: Raleway, Arial;
+}
+
+/* line 4, ../_tools/compass/sass/_pricing.scss */
+.pricing-page-header {
+  text-align: center;
+  padding: 14px;
+}
+
+/* line 8, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing {
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+/* line 13, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* line 16, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+
+/* line 19, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 58px;
+}
+
+/* line 23, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing .list-group-item {
+  color: #777777;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+/* line 27, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 31, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+/* line 35, ../_tools/compass/sass/_pricing.scss */
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+
+/* line 42, ../_tools/compass/sass/_pricing.scss */
+.pricing-middle-header {
+  padding: 20px;
+}
+
+/* line 47, ../_tools/compass/sass/_pricing.scss */
+.list-group-item .form-group {
+  margin: 0;
+}
+
+/* line 51, ../_tools/compass/sass/_pricing.scss */
+.panel-body {
+  height: 180px;
+}
+
+/* line 54, ../_tools/compass/sass/_pricing.scss */
+.individual-img {
+  background-image: url("../images/solodrinker.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center top;
+}
+
+/* line 60, ../_tools/compass/sass/_pricing.scss */
+.family-img {
+  background-image: url("../images/coffeedrinkers.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center top;
+}
+
+/* line 67, ../_tools/compass/sass/_pricing.scss */
+.table-list table {
+  width: 100%;
+  table-layout: auto;
+}
+/* line 70, ../_tools/compass/sass/_pricing.scss */
+.table-list table td {
+  width: 50%;
+}
+/* line 74, ../_tools/compass/sass/_pricing.scss */
+.table-list li {
+  text-align: center;
+}
+/* line 77, ../_tools/compass/sass/_pricing.scss */
+.table-list td:nth-child(2) li {
+  text-align: left;
+}
+
+/* line 1, ../_tools/compass/sass/_delivery.scss */
+.input-group {
+  padding-bottom: 10px;
 }
 
 /* line 1, ../_tools/compass/sass/_footer.scss */
