@@ -116,6 +116,19 @@ a:hover {
   /* IE 10 */
 }
 
+/* line 53, ../_tools/compass/sass/_home.scss */
+.gradient2 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 10%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 10%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 10%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+}
+
 /* line 1, ../_tools/compass/sass/_extras.scss */
 .wrap {
   position: relative;
@@ -403,6 +416,49 @@ a:hover {
   padding-bottom: 10px;
 }
 
+/* line 1, ../_tools/compass/sass/_payment.scss */
+#totals {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 6, ../_tools/compass/sass/_payment.scss */
+.payment-tables table td:nth-child(1) {
+  width: 50%;
+}
+/* line 9, ../_tools/compass/sass/_payment.scss */
+.payment-tables table td:nth-child(2) {
+  width: 50%;
+}
+
+/* line 15, ../_tools/compass/sass/_payment.scss */
+.payment-headers h2 {
+  font-weight: bold;
+}
+
+/* line 20, ../_tools/compass/sass/_payment.scss */
+.pricing-page-footer {
+  padding: 40px;
+  margin: 5px;
+}
+/* line 23, ../_tools/compass/sass/_payment.scss */
+.pricing-page-footer button {
+  color: black;
+  box-shadow: 1px 2px 8px darkgray;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 30, ../_tools/compass/sass/_payment.scss */
+  .payment-tables {
+    font-size: 24px;
+  }
+
+  /* line 33, ../_tools/compass/sass/_payment.scss */
+  #totals {
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
 /* line 1, ../_tools/compass/sass/_footer.scss */
 .footer {
   position: absolute;

@@ -3,7 +3,7 @@
         "name": "coffee-angular-app",
         "script": "server.js",
         "ignore_watch": ["node_modules"],
-        "watch": true,
+        "watch": "../",
         "log_date_format": "YYYY-MM-DD HH:mm Z"
     }]
 }
