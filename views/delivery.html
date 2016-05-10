@@ -1,59 +1,55 @@
 <div class="container-fluid main-content gradient1" ng-init="getStates()">
     <!-- Plans -->
     <section id="delivery">
-        <div class="container">
-            <div class="row">
-                <div class="pricing-page-header">
-                    <h1>Please enter your shipping info.</h1>
-                    <h4>We treat your coffee like gold. Like black gold (not Texas tea). It will be shipped safely and is guaranteed.</h4>
-                </div>
+        <div class="row">
+            <div class="pricing-page-header">
+                <h1>Please enter your shipping info.</h1>
+                <h4>We treat your coffee like gold. Like black gold (not Texas tea). It will be shipped safely and is guaranteed.</h4>
             </div>
-            <div class="jumbotron" style="box-shadow: .5px 1px 8px lightgray">
-                <div class="container">
-                    <div class="row">
-                        <h2>Address</h2>
-                        <div class="input-group">
-                            <span class="input-group-addon">Full Name</span>
-                            <input type="text" class="form-control" placeholder="Username">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">Address 1</span>
-                            <input type="text" class="form-control" placeholder="111 Some Street Address">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">Address 2</span>
-                            <input type="text" class="form-control" placeholder="222 Some Street Address">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">City</span>
-                            <input type="text" class="form-control" placeholder="Atlanta">
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">State</span>
-                            <div class="form-group">
-                                <select class="form-control" id="sel1">
-                                    <option disabled selected value></option>
-                                    <option ng-repeat="state in states">{{state.name | uppercase}}</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon">Zip Code</span>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="input-group date">
-                            <span class="input-group-addon">Date</span>
-                            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-click="open2()" ng-required="true" close-text="Close"/>
-                        </div>
+        </div>
+        <div class="well well-lg" style="box-shadow: .5px 1px 8px lightgray">
+            <div class="row">
+                <h2>Address</h2>
+                <div class="input-group">
+                    <span class="input-group-addon">Full Name</span>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Address 1</span>
+                    <input type="text" class="form-control" placeholder="111 Some Street Address">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Address 2</span>
+                    <input type="text" class="form-control" placeholder="222 Some Street Address">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">City</span>
+                    <input type="text" class="form-control" placeholder="Atlanta">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">State</span>
+                    <div class="form-group">
+                        <select class="form-control" id="sel1">
+                            <option disabled selected value></option>
+                            <option ng-repeat="state in states">{{state.name | uppercase}}</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="pricing-page-footer text-center">
-                    <button class="btn btn-lg btn-success" style="width: 200px">Ship It!</button>
+                <div class="input-group">
+                    <span class="input-group-addon">Zip Code</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group date">
+                    <span class="input-group-addon">Date</span>
+                    <input type="text" class="form-control" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-click="open2()" ng-required="true" close-text="Close"/>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <div class="row">
+            <div class="pricing-page-footer text-center">
+                <button class="btn btn-lg btn-success" style="width: 200px">Ship It!</button>
+            </div>
+        </div>
+
+    </section>
 </div>

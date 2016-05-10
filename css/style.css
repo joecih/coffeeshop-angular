@@ -3,20 +3,21 @@ html, body {
   position: relative;
   height: 100%;
   width: 100%;
+  margin: 0;
   overflow: hidden;
 }
 
-/* line 8, ../_tools/compass/sass/_base.scss */
+/* line 9, ../_tools/compass/sass/_base.scss */
 img {
   width: 80px;
 }
 
-/* line 11, ../_tools/compass/sass/_base.scss */
+/* line 12, ../_tools/compass/sass/_base.scss */
 a {
   color: rgba(0, 51, 0, 0.6);
 }
 
-/* line 14, ../_tools/compass/sass/_base.scss */
+/* line 15, ../_tools/compass/sass/_base.scss */
 a:hover {
   color: rgba(0, 51, 0, 0.8);
 }
@@ -70,7 +71,7 @@ a:hover {
 /* line 13, ../_tools/compass/sass/_home.scss */
 .content1 {
   position: relative;
-  height: 95%;
+  height: 100%;
 }
 
 /* line 17, ../_tools/compass/sass/_home.scss */
@@ -125,10 +126,9 @@ a:hover {
   left: 0;
   height: 100%;
   background-color: #f5f5dc;
-  background-image: url("../images/coffeebags2.jpg");
+  background-image: url("../images/Kopi_Luwak_Coffee1.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1280 853;
+  background-position: top left;
 }
 
 /* line 69, ../_tools/compass/sass/_home.scss */
@@ -436,7 +436,7 @@ a:hover {
 
 /* line 1, ../_tools/compass/sass/_delivery.scss */
 #delivery {
-  position: absolute;
+  position: relative;
   top: 92px;
 }
 
@@ -447,51 +447,57 @@ a:hover {
 
 /* line 1, ../_tools/compass/sass/_payment.scss */
 #payments {
-  position: absolute;
+  position: relative;
   top: 92px;
 }
 
-/* line 5, ../_tools/compass/sass/_payment.scss */
+/* line 6, ../_tools/compass/sass/_payment.scss */
 #totals {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 10, ../_tools/compass/sass/_payment.scss */
+/* line 11, ../_tools/compass/sass/_payment.scss */
 .payment-tables table td:nth-child(1) {
   width: 50%;
 }
-/* line 13, ../_tools/compass/sass/_payment.scss */
+/* line 14, ../_tools/compass/sass/_payment.scss */
 .payment-tables table td:nth-child(2) {
   width: 50%;
 }
 
-/* line 19, ../_tools/compass/sass/_payment.scss */
+/* line 20, ../_tools/compass/sass/_payment.scss */
 .payment-headers h2 {
   font-weight: bold;
 }
 
-/* line 24, ../_tools/compass/sass/_payment.scss */
+/* line 25, ../_tools/compass/sass/_payment.scss */
 .pricing-page-footer {
   padding-bottom: 28px;
   margin: 5px;
 }
-/* line 27, ../_tools/compass/sass/_payment.scss */
+/* line 28, ../_tools/compass/sass/_payment.scss */
 .pricing-page-footer button {
   color: black;
   box-shadow: 1px 2px 8px darkgray;
 }
 
-@media screen and (min-width: 960px) {
-  /* line 34, ../_tools/compass/sass/_payment.scss */
+@media screen and (min-width: 767px) {
+  /* line 35, ../_tools/compass/sass/_payment.scss */
   .payment-tables {
     font-size: 24px;
   }
 
-  /* line 37, ../_tools/compass/sass/_payment.scss */
+  /* line 38, ../_tools/compass/sass/_payment.scss */
   #totals {
     font-size: 28px;
     font-weight: bold;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 54, ../_tools/compass/sass/_payment.scss */
+  #payments.container-fluid {
+    padding-right: 30px;
   }
 }
 /* line 1, ../_tools/compass/sass/_register.scss */

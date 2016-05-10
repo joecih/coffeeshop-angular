@@ -26,7 +26,7 @@ $(document).on('mousewheel DOMMouseScroll', function(event) {
         delay = true;
         setTimeout(function() {
             delay = false
-        }, 200)
+        }, 800)
 
         var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
