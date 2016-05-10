@@ -1,22 +1,22 @@
 /* line 1, ../_tools/compass/sass/_base.scss */
 html, body {
-  overflow: hidden;
+  position: relative;
   height: 100%;
   width: 100%;
-  position: relative;
+  overflow: hidden;
 }
 
-/* line 7, ../_tools/compass/sass/_base.scss */
+/* line 8, ../_tools/compass/sass/_base.scss */
 img {
   width: 80px;
 }
 
-/* line 10, ../_tools/compass/sass/_base.scss */
+/* line 11, ../_tools/compass/sass/_base.scss */
 a {
   color: rgba(0, 51, 0, 0.6);
 }
 
-/* line 13, ../_tools/compass/sass/_base.scss */
+/* line 14, ../_tools/compass/sass/_base.scss */
 a:hover {
   color: rgba(0, 51, 0, 0.8);
 }
@@ -58,48 +58,126 @@ a:hover {
 /* line 2, ../_tools/compass/sass/_home.scss */
 .main-content {
   position: absolute;
-  top: 82px;
-  bottom: 0;
+  top: 0;
+  bottom: 5;
   left: 0;
   right: -17px;
-  font-family: Dosis, 'Indie Flower', Oswald, verdana, arial;
+  font-family: Raleway, Dosis, 'Indie Flower', Oswald, verdana, arial;
   overflow-y: auto;
+  height: 100vh;
 }
 
-/* line 12, ../_tools/compass/sass/_home.scss */
+/* line 13, ../_tools/compass/sass/_home.scss */
 .content1 {
-  background-color: #f5f5dc;
-  background-image: url("../images/coffee.jpg");
-  background-position: 45% bottom;
-  background-repeat: no-repeat;
-  height: 86vh;
+  position: relative;
+  height: 95%;
 }
 
-/* line 19, ../_tools/compass/sass/_home.scss */
+/* line 17, ../_tools/compass/sass/_home.scss */
 .content2 {
-  height: 80px;
+  position: relative;
   text-align: center;
-  line-height: 80px;
   font-family: fantasy;
   font-size: 25px;
 }
-
-/* line 26, ../_tools/compass/sass/_home.scss */
-.content3 {
-  position: relative;
-  background-image: url("../images/CoffeeBags.jpg");
-  background-repeat: no-repeat;
-  height: 80vh;
+/* line 22, ../_tools/compass/sass/_home.scss */
+.content2 .col-sm-12 {
+  height: 40px;
+  line-height: 50px;
 }
 
-/* line 35, ../_tools/compass/sass/_home.scss */
+/* line 27, ../_tools/compass/sass/_home.scss */
+.content3 {
+  position: relative;
+  height: 100%;
+}
+
+/* line 31, ../_tools/compass/sass/_home.scss */
+.content4 {
+  position: relative;
+  height: 100%;
+}
+
+/* line 37, ../_tools/compass/sass/_home.scss */
 .content5 {
-  background-image: url("../images/cupSteam.jpg");
-  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
   background-color: black;
 }
 
-/* line 40, ../_tools/compass/sass/_home.scss */
+/* line 43, ../_tools/compass/sass/_home.scss */
+.main-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f5f5dc;
+  background-image: url("../images/coffee.jpg");
+  background-position: 70% 80%;
+  background-repeat: no-repeat;
+  background-size: 1659 899;
+}
+
+/* line 56, ../_tools/compass/sass/_home.scss */
+.backImage1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f5f5dc;
+  background-image: url("../images/coffeebags2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1280 853;
+}
+
+/* line 69, ../_tools/compass/sass/_home.scss */
+.backImage2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url("../images/El-Cafe2-pan.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 1600 295;
+  opacity: 0.3;
+}
+
+/* line 82, ../_tools/compass/sass/_home.scss */
+.backImage3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url("../images/cupSteam.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 725 475;
+}
+
+/* line 95, ../_tools/compass/sass/_home.scss */
+.main-verbiage,
+.verbiage2 {
+  position: absolute;
+  top: 92px;
+  z-index: 2;
+}
+
+/* line 101, ../_tools/compass/sass/_home.scss */
+.verbiage1 {
+  position: absolute;
+  top: 92px;
+  z-index: 2;
+}
+
+/* line 107, ../_tools/compass/sass/_home.scss */
+#step-one,
+#step-three {
+  color: white;
+}
+
+/* line 114, ../_tools/compass/sass/_home.scss */
 .gradient1 {
   background-color: #2F2727;
   background-image: url(images/radial_bg.png);
@@ -116,7 +194,7 @@ a:hover {
   /* IE 10 */
 }
 
-/* line 53, ../_tools/compass/sass/_home.scss */
+/* line 127, ../_tools/compass/sass/_home.scss */
 .gradient2 {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 10%, transparent 100%);
@@ -133,18 +211,16 @@ a:hover {
 .wrap {
   position: relative;
   overflow: hidden;
-  height: 360px;
+  height: 100%;
 }
-
-/* line 7, ../_tools/compass/sass/_extras.scss */
+/* line 6, ../_tools/compass/sass/_extras.scss */
 .wrap img {
   width: 100%;
   height: auto;
   display: block;
 }
-
-/* line 12, ../_tools/compass/sass/_extras.scss */
-.wrap:before, .wrap:after {
+/* line 11, ../_tools/compass/sass/_extras.scss */
+.wrap:after, .wrap:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -160,8 +236,7 @@ a:hover {
   background: -ms-radial-gradient(circle, transparent, lightgray);
   /* IE 10 */
 }
-
-/* line 25, ../_tools/compass/sass/_extras.scss */
+/* line 28, ../_tools/compass/sass/_extras.scss */
 .wrap:before {
   right: 50%;
   -ms-transform-origin: 100% 100%;
@@ -171,8 +246,7 @@ a:hover {
   -webkit-transform: skewX(45deg);
   transform: skewX(45deg);
 }
-
-/* line 34, ../_tools/compass/sass/_extras.scss */
+/* line 37, ../_tools/compass/sass/_extras.scss */
 .wrap:after {
   left: 50%;
   -ms-transform-origin: 0 100%;
@@ -183,26 +257,52 @@ a:hover {
   transform: skewX(-45deg);
 }
 
-/* line 44, ../_tools/compass/sass/_extras.scss */
+/* line 48, ../_tools/compass/sass/_extras.scss */
+.wrap_small {
+  position: relative;
+  overflow: hidden;
+}
+/* line 53, ../_tools/compass/sass/_extras.scss */
+.wrap_small img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 59, ../_tools/compass/sass/_extras.scss */
 .arrow {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-bottom: 3%;
-  background-color: rgba(211, 211, 211, 0.5);
+  height: 20px;
+  padding-bottom: 2%;
+  background: -moz-radial-gradient(center, ellipse cover, black 0%, rgba(255, 255, 255, 0) 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, black), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* safari4+,chrome */
+  background: -webkit-radial-gradient(center, ellipse cover, black 0%, rgba(255, 255, 255, 0) 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, black 0%, rgba(255, 255, 255, 0) 100%);
+  /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, black 0%, rgba(255, 255, 255, 0) 100%);
+  /* ie10+ */
+  background: radial-gradient(ellipse at center, #000000 0%, rgba(255, 255, 255, 0) 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 );
+  /* ie6-9 */
 }
 
-/* line 60, ../_tools/compass/sass/_extras.scss */
+/* line 75, ../_tools/compass/sass/_extras.scss */
 .arrow:before, .arrow:after {
   content: '';
   position: absolute;
   bottom: 100%;
   width: 50%;
-  padding-bottom: inherit;
-  background-color: inherit;
+  padding-bottom: 4%;
+  background: inherit;
 }
 
-/* line 68, ../_tools/compass/sass/_extras.scss */
+/* line 83, ../_tools/compass/sass/_extras.scss */
 .arrow:before {
   right: 50%;
   -ms-transform-origin: 100% 100%;
@@ -213,7 +313,7 @@ a:hover {
   transform: skewX(45deg);
 }
 
-/* line 77, ../_tools/compass/sass/_extras.scss */
+/* line 92, ../_tools/compass/sass/_extras.scss */
 .arrow:after {
   left: 50%;
   -ms-transform-origin: 0 100%;
@@ -222,83 +322,6 @@ a:hover {
   -ms-transform: skewX(-45deg);
   -webkit-transform: skewX(-45deg);
   transform: skewX(-45deg);
-}
-
-/* line 87, ../_tools/compass/sass/_extras.scss */
-#triangle-down {
-  position: absolute;
-  left: 45%;
-  width: 0;
-  height: 0;
-  border-left: 46px solid transparent;
-  border-right: 46px solid transparent;
-  border-top: 32px solid transparent;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  z-index: 22;
-}
-
-/* line 98, ../_tools/compass/sass/_extras.scss */
-#triangle-topright {
-  position: absolute;
-  width: 0;
-  height: 0;
-  right: 0;
-  border-left: 32px solid transparent;
-}
-
-/* line 105, ../_tools/compass/sass/_extras.scss */
-#triangle-topleft {
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0;
-  border-top: 42px solid lightgray;
-  border-left: 32px solid transparent;
-}
-
-/* line 114, ../_tools/compass/sass/_extras.scss */
-#parallelogram-right {
-  position: absolute;
-  right: 10%;
-  width: 5%;
-  height: 100%;
-  -webkit-transform: skew(-25deg);
-  -moz-transform: skew(-25deg);
-  -o-transform: skew(-25deg);
-  background: -webkit-linear-gradient(-90deg, transparent, lightgray, transparent);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, transparent, lightgray, transparent);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, transparent, lightgray, transparent);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, transparent, lightgray, transparent);
-  /* Standard syntax */
-  z-index: 2;
-}
-
-/* line 135, ../_tools/compass/sass/_extras.scss */
-#parallelogram-left {
-  position: absolute;
-  left: 10%;
-  width: 1.5%;
-  height: 100%;
-  -webkit-transform: skew(25deg);
-  -moz-transform: skew(25deg);
-  -o-transform: skew(25deg);
-  background: -webkit-gradient(radial, center center, 0, center center, 460, from(transparent), to(lightgray));
-  background: -webkit-radial-gradient(circle, transparent, lightgray);
-  /* Safari 5.1+, Chrome 10+ */
-  background: -moz-radial-gradient(circle, transparent, lightgray);
-  /* Firefox 3.6+ */
-  background: -ms-radial-gradient(circle, transparent, lightgray);
-  /* IE 10 */
-  z-index: 2;
-}
-
-/* line 149, ../_tools/compass/sass/_extras.scss */
-#step-one {
-  position: absolute;
-  left: 2%;
 }
 
 /* line 1, ../_tools/compass/sass/_pricing.scss */
@@ -412,53 +435,71 @@ a:hover {
 }
 
 /* line 1, ../_tools/compass/sass/_delivery.scss */
+#delivery {
+  position: absolute;
+  top: 92px;
+}
+
+/* line 5, ../_tools/compass/sass/_delivery.scss */
 .input-group {
   padding-bottom: 10px;
 }
 
 /* line 1, ../_tools/compass/sass/_payment.scss */
+#payments {
+  position: absolute;
+  top: 92px;
+}
+
+/* line 5, ../_tools/compass/sass/_payment.scss */
 #totals {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 6, ../_tools/compass/sass/_payment.scss */
+/* line 10, ../_tools/compass/sass/_payment.scss */
 .payment-tables table td:nth-child(1) {
   width: 50%;
 }
-/* line 9, ../_tools/compass/sass/_payment.scss */
+/* line 13, ../_tools/compass/sass/_payment.scss */
 .payment-tables table td:nth-child(2) {
   width: 50%;
 }
 
-/* line 15, ../_tools/compass/sass/_payment.scss */
+/* line 19, ../_tools/compass/sass/_payment.scss */
 .payment-headers h2 {
   font-weight: bold;
 }
 
-/* line 20, ../_tools/compass/sass/_payment.scss */
+/* line 24, ../_tools/compass/sass/_payment.scss */
 .pricing-page-footer {
-  padding: 40px;
+  padding-bottom: 28px;
   margin: 5px;
 }
-/* line 23, ../_tools/compass/sass/_payment.scss */
+/* line 27, ../_tools/compass/sass/_payment.scss */
 .pricing-page-footer button {
   color: black;
   box-shadow: 1px 2px 8px darkgray;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 30, ../_tools/compass/sass/_payment.scss */
+  /* line 34, ../_tools/compass/sass/_payment.scss */
   .payment-tables {
     font-size: 24px;
   }
 
-  /* line 33, ../_tools/compass/sass/_payment.scss */
+  /* line 37, ../_tools/compass/sass/_payment.scss */
   #totals {
     font-size: 28px;
     font-weight: bold;
   }
 }
+/* line 1, ../_tools/compass/sass/_register.scss */
+#registration {
+  position: absolute;
+  top: 92px;
+}
+
 /* line 1, ../_tools/compass/sass/_footer.scss */
 .footer {
   position: absolute;

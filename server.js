@@ -4,12 +4,37 @@ var serveStatic = require('serve-static');
 var liveServer = require('live-server');
 const DEV_MODE = true;
 
+var os = require('os');
+var ifaces = os.networkInterfaces();
+var _ip = "127.0.0.1";
+
+Object.keys(ifaces).forEach(function(ifname) {
+    var alias = 0;
+
+    ifaces[ifname].forEach(function(iface) {
+        if ('IPv4' !== iface.family || iface.internal !== false) {
+            // skip over internal (i.e. 127.0.0.1) and non-ipv4 addresses
+            return;
+        }
+
+        if (alias >= 1) {
+            // this single interface has multiple ipv4 addresses
+            console.log("Multiple ipv4's" + ifname + ':' + alias, iface.address);
+        } else {
+            // this interface has only one ipv4 adress
+            console.log("Only One ipv4: " + ifname, iface.address);
+            _ip = iface.address;
+        }
+        ++alias;
+    });
+});
+
 if (DEV_MODE) {
     var params = {
         port: 8081, // Set the server port. Defaults to 8080.
-        host: "0.0.0.0", // Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP.
+        host: _ip, // Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP.
         root: __dirname, // Set root directory that's being server. Defaults to cwd.
-        open: true, // When false, it won't load your browser by default.
+        open: false, // When false, it won't load your browser by default.
         //ignore: 'scss,my/templates', // comma-separated string for paths to ignore
         //file: "index.html", // When set, serve this file for every 404 (useful for single-page applications)
         wait: 1000, // Waits for all changes, before reloading. Defaults to 0 sec.

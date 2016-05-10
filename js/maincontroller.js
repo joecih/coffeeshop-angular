@@ -3,6 +3,9 @@ var apiUrl = 'http://localhost:3020/';
 
 coffeeApp.controller('MainController', function($scope, $http, $location, $cookies) {
 
+    // STRIPE Secret Key: sk_test_qftJXSV8HrggGGriTCdcpTdb
+    // STRIPE Publishable Key: pk_test_GZ31rO5xxGkl8AMnZglI9DHI
+
     $scope.loginForm = function() {
         $http.post(apiUrl + 'login', {
             username: $scope.username,

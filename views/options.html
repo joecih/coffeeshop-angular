@@ -33,7 +33,8 @@
                                             <li class="list-group-item">
                                                 <i class="fa fa-check"></i>
                                                 Weekly Total</li>
-                                            <li class="list-group-item"><i class="fa fa-check"></i>Grind Type
+                                            <li class="list-group-item">
+                                                <i class="fa fa-check"></i>Grind Type
                                             </li>
                                         </ul>
                                     </td>
@@ -89,8 +90,9 @@
                                             <li class="list-group-item">
                                                 <i class="fa fa-check"></i>
                                                 Weekly Total</li>
-                                                <li class="list-group-item"><i class="fa fa-check"></i>Grind Type
-                                                </li>
+                                            <li class="list-group-item">
+                                                <i class="fa fa-check"></i>Grind Type
+                                            </li>
                                         </ul>
                                     </td>
                                     <td>
@@ -131,41 +133,45 @@
                 </div>
             </div>
             <div class="jumbotron">
-              <div class="container">
-                  <div class="col-sm-3 text-center">
-                      <img src="../images/calendar.png">
-                  </div>
-                  <div class="col-sm-8">
-                      <h2>1. FREQUENCY</h2>
-                      <p>How often would you like us to send you your coffee?</p>
-                      <div class="form-group">
-                          <select class="form-control" id="sel1">
-                              <option data-ng-repeat="frequency in ['Once A Week','Bi-Weekly','Once A Month']">{{frequency}}</option>
-                          </select>
-                      </div>
-                      <p>You can cancel anytime. You can skp anytime.</p>
-                  </div>
-              </div>
+                <div class="container">
+                    <div class="col-sm-3 text-center">
+                        <img src="../images/calendar.png">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>1. FREQUENCY</h2>
+                        <p>How often would you like us to send you your coffee?</p>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option data-ng-repeat="frequency in ['Once A Week','Bi-Weekly','Once A Month']">{{frequency}}</option>
+                            </select>
+                        </div>
+                        <p>You can cancel anytime. You can skp anytime.</p>
+                    </div>
+                </div>
             </div>
             <div class="jumbotron">
-              <div class="container">
-                  <div class="col-sm-3 text-center">
-                      <img src="../images/food-scale.png">
-                  </div>
-                  <div class="col-sm-8">
-                      <h2>1. QUANTITY</h2>
-                      <p>How many pounds (in increments of 25lb) would you like each delivery?</p>
-                      <div class="form-group">
-                          <select class="form-control" id="sel1">
-                              <option data-ng-repeat="pounds in [.25, .50, .75, 1, 1.25, 1.50, 1.75, 2, 2.25, 2.50]">{{pounds}}</option>
-                          </select>
-                      </div>
-                      <p>You can cancel anytime. You can skp anytime.</p>
-                  </div>
-              </div>
+                <div class="container">
+                    <div class="col-sm-3 text-center">
+                        <img src="../images/food-scale.png">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>1. QUANTITY</h2>
+                        <p>How many pounds (in increments of 25lb) would you like each delivery?</p>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option data-ng-repeat="pounds in [.25, .50, .75, 1, 1.25, 1.50, 1.75, 2, 2.25, 2.50]">{{pounds}}</option>
+                            </select>
+                        </div>
+                        <p>You can cancel anytime. You can skp anytime.</p>
+                    </div>
+                </div>
             </div>
-
+            <div class="row">
+                <div class="pricing-page-footer text-center">
+                    <button class="btn btn-lg btn-success" style="width: 200px">Submit!</button>
+                </div>
+            </div>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
 </div>

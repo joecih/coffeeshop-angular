@@ -1,82 +1,37 @@
-<div class="container-fluid main-content gradient1">
+<div class="container main-content gradient1">
     <!-- Plans -->
-    <section id="payments">
-        <div class="container">
-            <div class="row">
-                <div class="pricing-page-header">
-                    <h1>Payment</h1>
-                    <h4>Order summary below.</h4>
-                </div>
+    <section id="payments" ng-init="amount='$7.00'" >
+        <div class="row">
+            <div class="pricing-page-header">
+                <h1>Payment</h1>
+                <h4>Order summary below.</h4>
             </div>
-            <!-- <div class="container"> -->
-            <div class="row-fluid">
-                <div class="col-sm-12">
-                    <div class="jumbotron" style="box-shadow: .5px 1px 8px lightgray">
-                        <div class="payment-headers">
-                            <!-- <i class="fa fa-desktop"></i> -->
-                            <h2>Choices</h2>
-                        </div>
-                        <div class="payment-tables">
-                            <table class="table table-striped">
-                                <tbody>
-                                    <tr>
-                                        <td>Grind</td>
-                                        <td>course</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Frequency Of Delivery</td>
-                                        <td>weekly</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Coffee, In Pounds</td>
-                                        <td>0.35</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+        </div>
+        <!-- <div class="container"> -->
+        <div class="row-fluid">
+            <div class="col-sm-12">
+                <div class="jumbotron" style="box-shadow: .5px 1px 8px lightgray">
+                    <div class="payment-headers">
+                        <!-- <i class="fa fa-desktop"></i> -->
+                        <h2>Choices</h2>
                     </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <div class="jumbotron" style="box-shadow: .5px 1px 8px lightgray">
-                        <div class="payment-headers">
-                            <!-- <i class="fa fa-desktop"></i> -->
-                            <h2>Delivery Information</h2>
-                        </div>
-                        <div class="payment-tables">
-                            <table class="table table-striped">
-                                <tbody>
-                                    <tr>
-                                        <td>Full Name</td>
-                                        <td>Joe Hice</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address</td>
-                                        <td>433 Sweet Apple Lane</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Address 2</td>
-                                        <td>empty</td>
-                                    </tr>
-                                    <tr>
-                                        <td>City</td>
-                                        <td>Atlanta</td>
-                                    </tr>
-                                    <tr>
-                                        <td>State</td>
-                                        <td>Georgia</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Zip</td>
-                                        <td>30518</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Delivery Date</td>
-                                        <td>05/03/2016</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="payment-tables">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>Grind</td>
+                                    <td>course</td>
+                                </tr>
+                                <tr>
+                                    <td>Frequency Of Delivery</td>
+                                    <td>weekly</td>
+                                </tr>
+                                <tr>
+                                    <td>Coffee, In Pounds</td>
+                                    <td>0.35</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -85,34 +40,88 @@
                 <div class="jumbotron" style="box-shadow: .5px 1px 8px lightgray">
                     <div class="payment-headers">
                         <!-- <i class="fa fa-desktop"></i> -->
-                        <h2>Current Charge</h2>
+                        <h2>Delivery Information</h2>
                     </div>
                     <div class="payment-tables">
                         <table class="table table-striped">
                             <tbody>
                                 <tr>
-                                    <td>Quantity</td>
-                                    <td>0.35lbs x $20.00/lb = $7.00</td>
+                                    <td>Full Name</td>
+                                    <td>Joe Hice</td>
                                 </tr>
                                 <tr>
-                                    <td>Shipping</td>
-                                    <td>FREE!</td>
+                                    <td>Address</td>
+                                    <td>433 Sweet Apple Lane</td>
                                 </tr>
-                                <tr id="totals" class="gradient2">
-                                    <td>Total</td>
-                                    <td>$7.00</td>
+                                <tr>
+                                    <td>Address 2</td>
+                                    <td>empty</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>Atlanta</td>
+                                </tr>
+                                <tr>
+                                    <td>State</td>
+                                    <td>Georgia</td>
+                                </tr>
+                                <tr>
+                                    <td>Zip</td>
+                                    <td>30518</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery Date</td>
+                                    <td>05/03/2016</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="pricing-page-footer text-center">
-                    <button class="btn btn-lg btn-success">Pay With Card</button>
-                    <button class="btn btn-lg btn-warning">Cancel Order</button>
+        <div class="col-sm-12">
+            <div class="jumbotron" style="box-shadow: .5px 1px 8px lightgray">
+                <div class="payment-headers">
+                    <!-- <i class="fa fa-desktop"></i> -->
+                    <h2>Current Charge</h2>
                 </div>
+                <div class="payment-tables">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Quantity</td>
+                                <td>0.35lbs x $20.00/lb = $7.00</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping</td>
+                                <td>FREE!</td>
+                            </tr>
+                            <tr id="totals" class="gradient2" ng-model="amount">
+                                <td>Total</td>
+                                <td>{{amount}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="pricing-page-footer text-center">
+                <!-- <button class="btn btn-lg btn-success">Pay With Card</button> -->
+                <form action="" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js"
+                        class="stripe-button"
+                        data-key="pk_test_GZ31rO5xxGkl8AMnZglI9DHI"
+                        data-amount={{amount}}
+                        data-name="DC Roasters"
+                        data-description="Coffee Order"
+                        data-image="http://www.wkwyatt.com/assets/images/portfolio/dc-logo.png"
+                        data-locale="auto"></script>
+                </form>
+                <button class="btn btn-lg btn-warning">Cancel Order</button>
             </div>
         </div>
     </div>
